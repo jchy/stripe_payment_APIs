@@ -2,9 +2,11 @@
 In this project we will design and implement backend APIs for Stripe Payment gateway integration.
 
 #### Tech stacks used 
-- Node.js
-- Express.js
-- JavaScript
+```js
+  • Node.js
+  • Express.js
+  • JavaScript
+```
 
 ### Steps to use this project:~
 1. Clone this project by using the follwing command
