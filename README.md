@@ -294,7 +294,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
 ```js
    • method : POST 
    • API : http://localhost:5000/api/v1/capture_intent/put_the_payment_intent_id_here
-   • I everything goes will you will get the follwoing response
+   • If everything goes will you will get the follwoing response
       {
           "id": "pi_3KyV7zSC9liGGbLo1px7Ygcp",
           "object": "payment_intent",
