@@ -7,35 +7,35 @@ In this project we will design and implement backend APIs for Stripe Payment gat
 - JavaScript
 
 ### Steps to use this project:~
-- 1. Clone this project by using the follwing command
+1. Clone this project by using the follwing command
 ```js
   git clone 
 ```
 
-- 2. Navigate inside the folder where you cloned this project
+2. Navigate inside the folder where you cloned this project
 
-- 3. Create a folder named < .env > by using the following command :~
+3. Create a folder named < .env > by using the following command :~
 ```js
   mkdir .env
 ```
-- 4. Navigate inside the .env folder and provide the follwing data there:~
+4. Navigate inside the .env folder and provide the follwing data there:~
 ```
   STRIPE_PAYMENT_PUBLIC_KEY= PUT_YOUR_STRIPE_PUBLIC_KEY_HERE
   STRIPE_PAYMENT_SECRET_KEY= PUT_YOUR_STRIPE_SECRET_KEY_HERE
   PORT= PUT_PORT_NUMBER_TO_RUN_THE_SERVER_HERE
 ```
 
-- 5. Run the follwoing command in the terminal to install the node_modules and required packages to run this project
+5. Run the follwoing command in the terminal to install the node_modules and required packages to run this project
 ```js
  npm install
 ```
 
-- 6. To run the server execute the follwoing command on your terminal
+6. To run the server execute the follwoing command on your terminal
 ```js
  npm start
 ```
 
-- 7. To perform the following operations like 
+7. To perform the following operations like 
 
 ```js
 
@@ -52,7 +52,7 @@ In this project we will design and implement backend APIs for Stripe Payment gat
   • POST /api/v1/create_refund/:id
   
 ```
-- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like
+8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like
 ```js
 
  APIs to get a List of all intents
