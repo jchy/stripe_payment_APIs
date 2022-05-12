@@ -218,6 +218,76 @@ In this project we will design and implement backend for Stripe Payment gateway 
 ```js
   • Method : POST 
   • API : http://localhost:5000/api/v1/create_intent
+  • Response of this will look like this
+   {
+    "requires_action": true,
+    "payment_intent_client_secret": "pi_3KyV7zSC9liGGbLo1px7Ygcp_secret_qS079xjht98K6nn5cq7qhwSbJ",
+    "intent": {
+        "id": "pi_3KyV7zSC9liGGbLo1px7Ygcp",
+        "object": "payment_intent",
+        "amount": 1800,
+        "amount_capturable": 0,
+        "amount_details": {
+            "tip": {}
+        },
+        "amount_received": 0,
+        "application": null,
+        "application_fee_amount": null,
+        "automatic_payment_methods": null,
+        "canceled_at": null,
+        "cancellation_reason": null,
+        "capture_method": "manual",
+        "charges": {
+            "object": "list",
+            "data": [],
+            "has_more": false,
+            "total_count": 0,
+            "url": "/v1/charges?payment_intent=pi_3KyV7zSC9liGGbLo1px7Ygcp"
+        },
+        "client_secret": "pi_3KyV7zSC9liGGbLo1px7Ygcp_secret_qS079xjht98K6nn5cq7qhwSbJ",
+        "confirmation_method": "automatic",
+        "created": 1652335439,
+        "currency": "inr",
+        "customer": null,
+        "description": null,
+        "invoice": null,
+        "last_payment_error": null,
+        "livemode": false,
+        "metadata": {},
+        "next_action": {
+            "type": "use_stripe_sdk",
+            "use_stripe_sdk": {
+                "type": "three_d_secure_redirect",
+                "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyV80SC9liGGbLo3uycj8AN?client_secret=src_client_secret_pXHh4uyywExySXuhrusFxxQX&source_redirect_slug=test_YWNjdF8xS3NtQVZTQzlsaUdHYkxvLF9MZnFwaThVcGprRFlHb2VKaXVJMGFOY3JsV1E2TFBB0100vE2aSKu9",
+                "source": "src_1KyV80SC9liGGbLo3uycj8AN"
+            }
+        },
+        "on_behalf_of": null,
+        "payment_method": "pm_1KyV7zSC9liGGbLohHVdkZN1",
+        "payment_method_options": {
+            "card": {
+                "installments": null,
+                "mandate_options": null,
+                "network": null,
+                "request_three_d_secure": "automatic"
+            }
+        },
+        "payment_method_types": [
+            "card"
+        ],
+        "processing": null,
+        "receipt_email": null,
+        "review": null,
+        "setup_future_usage": null,
+        "shipping": null,
+        "source": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "requires_action",
+        "transfer_data": null,
+        "transfer_group": null
+      }
+    }
 ```
 
 ```js
