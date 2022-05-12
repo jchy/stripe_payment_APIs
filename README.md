@@ -212,11 +212,9 @@ In this project we will design and implement backend for Stripe Payment gateway 
             }
           ]
        }
-   ```
 ```
 
 9. To create an intent go to postman or any other similar tool and make a POST request at the follwoing API
-
 ```js
   • Method : POST 
   • API : http://localhost:5000/api/v1/create_intent
