@@ -68,13 +68,15 @@ In this project we will design and implement backend for Stripe Payment gateway 
   
 ```
 <!-- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like -->
+
 8. To get a list of all the intents go to postman or any other similar tool and make a GET request at the follwoing API
 ```js
    • method : GET 
    • API : http://localhost:5000/api/v1/get_intents
+   
    • Response of this will look similar to the following
-   ```js
-      {
+
+   {
     "data": {
         "object": "list",
         "data": [
@@ -114,7 +116,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
                     "type": "use_stripe_sdk",
                     "use_stripe_sdk": {
                         "type": "three_d_secure_redirect",
-                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTU7SC9liGGbLoLwI4BrZN?client_secret=src_client_secret_zDjP3xrUiTGyHEacpshD4NL5&source_redirect_slug=test_YWNjdF8xS3NtQVZTQzlsaUdHYkxvLF9MZnA4RVZ6SlN4R1BtU2Fid1E4WGZhbFlrTjloRFVV0100Edq4n56U",
+                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTU7SC9liGGbLoLwI4BrZN?client_secret=YOUR_SECRET_KEYS_WILL_BE_DISPLAYED_HERE",
                         "source": "src_1KyTU7SC9liGGbLoLwI4BrZN"
                     }
                 },
@@ -179,7 +181,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
                     "type": "use_stripe_sdk",
                     "use_stripe_sdk": {
                         "type": "three_d_secure_redirect",
-                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTRLSC9liGGbLoWBDAQ5PC?client_secret=src_client_secret_q6awrFIpa8UQlgRQ3V7q8Azv&source_redirect_slug=test_YWNjdF8xS3NtQVZTQzlsaUdHYkxvLF9MZnA1WlpNVXMzVlR1eXQ2Zk9YRHNNTWFGNm5ueGQy0100hR5lyOzw",
+                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTRLSC9liGGbLoWBDAQ5PC?client_secret=YOUR_SECRET_KEYS_WILL_BE_DISPLAYED_HERE",
                         "source": "src_1KyTRLSC9liGGbLoWBDAQ5PC"
                     }
                 },
