@@ -1,5 +1,5 @@
 # stripe_payment_APIs
-In this project we will design and implement backend for Stripe Payment gateway integration for the follwoing APIs:~
+In this project we will design and implement backend for Stripe Payment gateway integration for the following APIs:~
 ```js
   Get a List of all intents
    • GET /api/v1/get_intents
@@ -69,7 +69,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
 ```
 <!-- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like -->
 
-8. To get a list of all the intents go to postman or any other similar tool and use the follwoing method and API
+8. To get a list of all the intents go to postman or any other similar tool and use the following method and API
 ```js
    • method : GET 
    • API : http://localhost:5000/api/v1/get_intents
@@ -290,7 +290,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
     }
 ```
 
-10. To capture an intent go to postman or any other similar tool and use the follwoing Method and API
+10. To capture an intent go to postman or any other similar tool and use the following Method and API
 ```js
    • method : POST 
    • API : http://localhost:5000/api/v1/capture_intent/put_the_payment_intent_id_here
@@ -440,10 +440,34 @@ In this project we will design and implement backend for Stripe Payment gateway 
     }
     
    • NOTE: If the payment requires additional actions such as 3D Secure authentication, the PaymentIntent’s status will be set to requires_action. If the payment failed, the status is set back to requires_payment_method and you should show an error to your user. If the payment doesn’t require any additional authentication then a charge is created and the PaymentIntent status is set to succeeded.
+      
 ```
 
- APIs for a refund for the created intent  
+11. To create a refund for the created intent go to postman or any other similar tool and use the following Method and API
 ```js
-   • POST http://localhost:5000/api/v1/create_refund/put_the_payment_intent_id_here
-      
+   • method : POST http://localhost:5000/api/v1/create_refund/put_the_payment_intent_id_here
+   • APIS : http://localhost:5000/api/v1/create_refund/put_the_payment_intent_id_here
+   • If everything goes well you will get following response
+     {
+        "id": "pi_3KyV7zSC9liGGbLo1px7Ygcp",
+        "object": "refund",
+        "amount": 100,
+        "balance_transaction": null,
+        "charge": "ch_3KyU9c2eZvKYlo2C1YrRtQEB",
+        "created": 1652331698,
+        "currency": "usd",
+        "metadata": {},
+        "payment_intent": null,
+        "reason": null,
+        "receipt_number": null,
+        "source_transfer_reversal": null,
+        "status": "succeeded",
+        "transfer_reversal": null
+     }
+     
+    • Otherwise you will recieve an error like this which will guide you what went wrong
+      {
+          "message": "This PaymentIntent (pi_3KyV7zSC9liGGbLo1px7Ygcp) does not have a successful charge to refund.",
+          "suggestions": "Please make sure the charges exist on the paymentIntent id you provided"
+      }
 ```
