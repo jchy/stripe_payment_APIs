@@ -18,7 +18,7 @@ In this project we will design and implement backend APIs for Stripe Payment gat
 ```js
   mkdir .env
 ```
-4. Navigate inside the .env folder and provide the follwing data there:~
+4. Navigate inside the .env folder and provide the follwing details there:~
 ```
   STRIPE_PAYMENT_PUBLIC_KEY= PUT_YOUR_STRIPE_PUBLIC_KEY_HERE
   STRIPE_PAYMENT_SECRET_KEY= PUT_YOUR_STRIPE_SECRET_KEY_HERE
