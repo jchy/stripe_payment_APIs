@@ -24,7 +24,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
 ### Guidelines to run this project:~
 1. Clone this project by using the follwing command
 ```js
-  git clone 
+  git clone https://github.com/jchy/stripe_payment_APIs.git
 ```
 
 2. Navigate inside the folder where you cloned this project
