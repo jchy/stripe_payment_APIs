@@ -69,7 +69,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
 ```
 <!-- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like -->
 
-8. To get a list of all the intents go to postman or any other similar tool and make a GET request at the follwoing API
+8. To get a list of all the intents go to postman or any other similar tool and use the follwoing method and API
 ```js
    • method : GET 
    • API : http://localhost:5000/api/v1/get_intents
@@ -214,7 +214,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
        }
 ```
 
-9. To create an intent go to postman or any other similar tool and make a POST request at the follwoing API
+9. To create an intent go to postman or any other similar tool and use the follwoing Method and API
 ```js
   • Method : POST 
   • API : http://localhost:5000/api/v1/create_intent
