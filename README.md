@@ -25,17 +25,17 @@ In this project we will design and implement backend APIs for Stripe Payment gat
   PORT= PUT_PORT_NUMBER_TO_RUN_THE_SERVER_HERE
 ```
 
-- 3. Run the follwoing command in the terminal to install the node_modules and required packages to run this project
+- 5. Run the follwoing command in the terminal to install the node_modules and required packages to run this project
 ```js
  npm install
 ```
 
-- 4. To run the server execute the follwoing command on your terminal
+- 6. To run the server execute the follwoing command on your terminal
 ```js
  npm start
 ```
 
-- 5. To perform the following operations like 
+- 7. To perform the following operations like 
 
 ```js
 
@@ -52,7 +52,7 @@ In this project we will design and implement backend APIs for Stripe Payment gat
   • POST /api/v1/create_refund/:id
   
 ```
-- 6. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like
+- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like
 ```js
 
  APIs to get a List of all intents
