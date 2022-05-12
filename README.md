@@ -67,12 +67,154 @@ In this project we will design and implement backend for Stripe Payment gateway 
   • POST /api/v1/create_refund/:id
   
 ```
-8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like
+<!-- 8. Goto to the following routes as per your requirements and apply the appropriate method with the required data mentioned in Postman or at client-side or anywhere you like -->
+8. To get a list of all the intents go to postman or any other similar tool and make a GET request at the follwoing API
 ```js
+   • method : GET 
+   • API : http://localhost:5000/api/v1/get_intents
+   • Response of this will look similar to the following
+   ```js
+      {
+    "data": {
+        "object": "list",
+        "data": [
+            {
+                "id": "pi_3KyTU6SC9liGGbLo0tLJ1O4k",
+                "object": "payment_intent",
+                "amount": 1800,
+                "amount_capturable": 0,
+                "amount_details": {
+                    "tip": {}
+                },
+                "amount_received": 0,
+                "application": null,
+                "application_fee_amount": null,
+                "automatic_payment_methods": null,
+                "canceled_at": null,
+                "cancellation_reason": null,
+                "capture_method": "manual",
+                "charges": {
+                    "object": "list",
+                    "data": [],
+                    "has_more": false,
+                    "total_count": 0,
+                    "url": "/v1/charges?payment_intent=pi_3KyTU6SC9liGGbLo0tLJ1O4k"
+                },
+                "client_secret": "pi_3KyTU6SC9liGGbLo0tLJ1O4k_secret_4mnVLRLzrWpYhR8y7LPAyUiqK",
+                "confirmation_method": "automatic",
+                "created": 1652329122,
+                "currency": "inr",
+                "customer": null,
+                "description": null,
+                "invoice": null,
+                "last_payment_error": null,
+                "livemode": false,
+                "metadata": {},
+                "next_action": {
+                    "type": "use_stripe_sdk",
+                    "use_stripe_sdk": {
+                        "type": "three_d_secure_redirect",
+                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTU7SC9liGGbLoLwI4BrZN?client_secret=src_client_secret_zDjP3xrUiTGyHEacpshD4NL5&source_redirect_slug=test_YWNjdF8xS3NtQVZTQzlsaUdHYkxvLF9MZnA4RVZ6SlN4R1BtU2Fid1E4WGZhbFlrTjloRFVV0100Edq4n56U",
+                        "source": "src_1KyTU7SC9liGGbLoLwI4BrZN"
+                    }
+                },
+                "on_behalf_of": null,
+                "payment_method": "pm_1KyTU6SC9liGGbLoOBumfHxe",
+                "payment_method_options": {
+                    "card": {
+                        "installments": null,
+                        "mandate_options": null,
+                        "network": null,
+                        "request_three_d_secure": "automatic"
+                    }
+                },
+                "payment_method_types": [
+                    "card"
+                ],
+                "processing": null,
+                "receipt_email": null,
+                "review": null,
+                "setup_future_usage": null,
+                "shipping": null,
+                "source": null,
+                "statement_descriptor": null,
+                "statement_descriptor_suffix": null,
+                "status": "requires_action",
+                "transfer_data": null,
+                "transfer_group": null
+            },
+            {
+                "id": "pi_3KyTRLSC9liGGbLo0OdidH3f",
+                "object": "payment_intent",
+                "amount": 1800,
+                "amount_capturable": 0,
+                "amount_details": {
+                    "tip": {}
+                },
+                "amount_received": 0,
+                "application": null,
+                "application_fee_amount": null,
+                "automatic_payment_methods": null,
+                "canceled_at": null,
+                "cancellation_reason": null,
+                "capture_method": "manual",
+                "charges": {
+                    "object": "list",
+                    "data": [],
+                    "has_more": false,
+                    "total_count": 0,
+                    "url": "/v1/charges?payment_intent=pi_3KyTRLSC9liGGbLo0OdidH3f"
+                },
+                "client_secret": "pi_3KyTRLSC9liGGbLo0OdidH3f_secret_REhf67crxstHID5xihs9tisIA",
+                "confirmation_method": "automatic",
+                "created": 1652328951,
+                "currency": "inr",
+                "customer": null,
+                "description": null,
+                "invoice": null,
+                "last_payment_error": null,
+                "livemode": false,
+                "metadata": {},
+                "next_action": {
+                    "type": "use_stripe_sdk",
+                    "use_stripe_sdk": {
+                        "type": "three_d_secure_redirect",
+                        "stripe_js": "https://hooks.stripe.com/redirect/authenticate/src_1KyTRLSC9liGGbLoWBDAQ5PC?client_secret=src_client_secret_q6awrFIpa8UQlgRQ3V7q8Azv&source_redirect_slug=test_YWNjdF8xS3NtQVZTQzlsaUdHYkxvLF9MZnA1WlpNVXMzVlR1eXQ2Zk9YRHNNTWFGNm5ueGQy0100hR5lyOzw",
+                        "source": "src_1KyTRLSC9liGGbLoWBDAQ5PC"
+                    }
+                },
+                "on_behalf_of": null,
+                "payment_method": "pm_1KyTRKSC9liGGbLoxgay896u",
+                "payment_method_options": {
+                    "card": {
+                        "installments": null,
+                        "mandate_options": null,
+                        "network": null,
+                        "request_three_d_secure": "automatic"
+                    }
+                },
+                "payment_method_types": [
+                    "card"
+                ],
+                "processing": null,
+                "receipt_email": null,
+                "review": null,
+                "setup_future_usage": null,
+                "shipping": null,
+                "source": null,
+                "statement_descriptor": null,
+                "statement_descriptor_suffix": null,
+                "status": "requires_action",
+                "transfer_data": null,
+                "transfer_group": null
+            }
+          ]
+       }
+   ```
+```
 
- APIs to get a List of all intents
-   • GET http://localhost:5000/api/v1/get_intents
 
+```js
  APIs for creating intent is 
    • POST http://localhost:5000/api/v1/create_intent
 
