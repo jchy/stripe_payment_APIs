@@ -12,7 +12,18 @@ In this project we will design and implement backend APIs for Stripe Payment gat
   git clone 
 ```
 
-- 2. Navigate inside the folder where you clones this project
+- 2. Navigate inside the folder where you cloned this project
+
+- 3. Create a folder named < .env > by using the following command :~
+```js
+  mkdir .env
+```
+- 4. Navigate inside the .env folder and provide the follwing data there:~
+```
+  STRIPE_PAYMENT_PUBLIC_KEY= PUT_YOUR_STRIPE_PUBLIC_KEY_HERE
+  STRIPE_PAYMENT_SECRET_KEY= PUT_YOUR_STRIPE_SECRET_KEY_HERE
+  PORT= PUT_PORT_NUMBER_TO_RUN_THE_SERVER_HERE
+```
 
 - 3. Run the follwoing command in the terminal to install the node_modules and required packages to run this project
 ```js
