@@ -8,7 +8,7 @@ In this project we will design and implement backend APIs for Stripe Payment gat
   • JavaScript
 ```
 
-### Steps to use this project:~
+### Guidelines to run this project:~
 1. Clone this project by using the follwing command
 ```js
   git clone 
