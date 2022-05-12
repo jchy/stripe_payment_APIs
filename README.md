@@ -1,5 +1,18 @@
 # stripe_payment_APIs
-In this project we will design and implement backend APIs for Stripe Payment gateway integration.
+In this project we will design and implement backend the follwoing APIs for Stripe Payment gateway integration
+```js
+  Get a List of all intents
+   • GET /api/v1/get_intents
+
+ Create intent for payment
+  • POST /api/v1/create_intent
+  
+ Capture the created intent
+  • POST /api/v1/capture_intent/:id
+  
+ Create a refund for the created intent 
+  • POST /api/v1/create_refund/:id
+```
 
 #### Tech stacks used 
 ```js
