@@ -438,6 +438,8 @@ In this project we will design and implement backend for Stripe Payment gateway 
           "transfer_data": null,
           "transfer_group": null
     }
+    
+   • NOTE: If the payment requires additional actions such as 3D Secure authentication, the PaymentIntent’s status will be set to requires_action. If the payment failed, the status is set back to requires_payment_method and you should show an error to your user. If the payment doesn’t require any additional authentication then a charge is created and the PaymentIntent status is set to succeeded.
 ```
 
  APIs for a refund for the created intent  
