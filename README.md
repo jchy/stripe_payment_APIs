@@ -449,7 +449,7 @@ In this project we will design and implement backend for Stripe Payment gateway 
    • APIS : http://localhost:5000/api/v1/create_refund/put_the_payment_intent_id_here
    • If everything goes well you will get following response
      {
-        "id": "pi_3KyV7zSC9liGGbLo1px7Ygcp",
+        "id": "re_3KyV7zSC9liGGbLo1px7Ygcp",
         "object": "refund",
         "amount": 100,
         "balance_transaction": null,
