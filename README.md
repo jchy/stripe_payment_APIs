@@ -1,5 +1,5 @@
 # stripe_payment_APIs
-In this project we will design and implement backend the follwoing APIs for Stripe Payment gateway integration
+In this project we will design and implement backend for Stripe Payment gateway integration for the follwoing APIs:~
 ```js
   Get a List of all intents
    • GET /api/v1/get_intents
