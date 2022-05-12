@@ -63,10 +63,10 @@ In this project we will design and implement backend APIs for Stripe Payment gat
  APIs for creating intent is 
    • POST http://localhost:5000/api/v1/create_intent
 
-  APIs for capture intent is 
+ APIs for capture intent is 
    • POST http://localhost:5000/api/v1/capture_intent/put_the_payment_intent_id_here
    
-  APIs for a refund for the created intent  
+ APIs for a refund for the created intent  
    • POST http://localhost:5000/api/v1/create_refund/put_the_payment_intent_id_here
       
 ```
